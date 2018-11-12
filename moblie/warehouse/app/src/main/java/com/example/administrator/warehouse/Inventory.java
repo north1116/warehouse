@@ -1,0 +1,28 @@
+package com.example.administrator.warehouse;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+
+public class Inventory extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_inventory);
+    }
+    public void ScanBarcode(View v) {
+        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
+        intentIntegrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+        intentIntegrator.setPrompt("Scan");
+        intentIntegrator.setCameraId(0);
+        intentIntegrator.setBeepEnabled(false);
+        intentIntegrator.setBarcodeImageEnabled(false);
+        intentIntegrator.initiateScan();
+    }
+    public void Killapp(View v){
+        System.exit(1);
+    }
+}
