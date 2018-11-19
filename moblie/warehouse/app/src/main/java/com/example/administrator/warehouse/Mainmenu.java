@@ -13,7 +13,8 @@ public class Mainmenu extends AppCompatActivity {
         setContentView(R.layout.activity_mainmenu);
     }
     public void killapp(View v){
-        System.exit(1);
+        Intent itn = new Intent(this,MainActivity.class);
+        startActivity(itn);
     }
     public void Inbound(View v){
         Intent itn = new Intent(this,Inbound.class);

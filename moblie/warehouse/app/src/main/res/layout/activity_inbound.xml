@@ -14,6 +14,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="22dp"
         android:text="รหัสสินค้า"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +26,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="22dp"
         android:text="ชื่อสินค้า"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -36,6 +38,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="22dp"
         android:text="หน่วยนับสินค้า"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -47,6 +50,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="22dp"
         android:text="หมวดสินค้า"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -58,6 +62,7 @@
         android:layout_marginLeft="44dp"
         android:layout_marginTop="23dp"
         android:text="จำนวน"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -69,6 +74,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="23dp"
         android:text="ราคา/หน่วย"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -80,6 +86,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="23dp"
         android:text="สถานที่จัดเก็บสินค้า"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -91,6 +98,7 @@
         android:layout_marginLeft="28dp"
         android:layout_marginTop="21dp"
         android:text="วันที่นำเข้าจัดเก็บ"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -102,6 +110,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="23dp"
         android:text="แถวพาเหรดที่ถูกจัดเก็บ"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -113,6 +122,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="22dp"
         android:text="ชั้นพาเหรดที่ถูกจัดเก็บ"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -226,6 +236,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="28dp"
+        android:onClick="addDatabase"
         android:text="ตกลง"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -257,7 +268,7 @@
 
     <Spinner
         android:id="@+id/productunit"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="31dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
@@ -267,7 +278,7 @@
 
     <Spinner
         android:id="@+id/producttype"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="31dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
@@ -277,7 +288,7 @@
 
     <Spinner
         android:id="@+id/place"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="31dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
